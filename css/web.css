@@ -1,0 +1,73 @@
+:root { font-size: 14px; }
+body {
+    background: #080534;
+    color: #FFFFFF;
+    font-family: 'Saira', sans-serif;
+}
+
+a, a:hover {
+    text-decoration: none !important;
+}
+
+#home {
+    min-height: 100vh;
+    background: url('../assets/img/hero-bg.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    max-height: 100vh;
+    background: #040216;
+    transition: all .5s;
+    z-index: 10;
+    margin-top: -100vh;
+}
+
+.nav a  { 
+    color: #FFFFFF; 
+}
+
+.nav a.active { 
+    color: #5E6EFF; 
+    font-weight: 700; 
+}
+
+.nav.active {
+    margin-top: 0;
+}
+
+/* `sm` applies to small devices (landscape phones, less than 576px) */
+@media (min-width: 576px) {
+    
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (min-width: 768px) {
+    
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (min-width: 992px) {
+    
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (min-width: 1200px) {
+    
+}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (min-width: 1400px) {
+    
+}
+
+/* `xxxl` applies to x-large devices (large desktops, less than 1900px) */
+@media (min-width: 1900px) {
+    
+}
