@@ -23,6 +23,53 @@ a, a:hover {
     background-position: center;
 }
 
+#earn {
+    min-height: 100vh;
+    background: url('../assets/img/earn-bg.svg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 5em;
+}
+
+#craft {
+    min-height: 100vh;
+    background: url('../assets/img/craft-trade-bg.png');
+    background-size: cover;
+    background-position: left;
+    padding-top: 5em;
+}
+
+#tokenomics {
+    min-height: 100vh;
+    background: url('../assets/img/tokenomic-bg.svg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 5em;
+}
+
+#x-online {
+    min-height: 100vh;
+    background: url('../assets/img/x-online-bg.svg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 5em;
+}
+
+#roadmap {
+    min-height: 100vh;
+    background: url('../assets/img/roadmap-bg.svg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 5em;
+}
+#team {
+    min-height: 100vh;
+    background: url('../assets/img/team-bg.svg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 5em;
+}
+
 .nav {
     position: fixed;
     top: 0;
@@ -63,8 +110,8 @@ a, a:hover {
     top: 0;
     transform: translateX(-50%);
     display: inline-block;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     border-radius: 50%;
     transition: all .8s;
 }
@@ -78,7 +125,7 @@ a, a:hover {
 }
 
 .circle-slider-block.active {
-    top: 58%;
+    top: 50%;
     position: relative;
     transform: translateX(-50%) rotate(0deg) !important;
 }
@@ -102,7 +149,7 @@ a, a:hover {
 
 .circle-slider-arrow {
     position: absolute;
-    bottom: 20%;
+    bottom: 28%;
     display: inline-block;
     background: rgba(255, 255, 255, 0.14);
     box-shadow: 0px 8px 8px -4px rgba(0, 0, 0, 0.14);
@@ -112,10 +159,56 @@ a, a:hover {
 }
 
 .circle-slider-arrow-left {
-    left: 15%;
+    left: 10%;
 }
 .circle-slider-arrow-right {
-    right: 15%;
+    right: 10%;
+}
+
+.genre-box {
+    background: url('../assets/img/bg-body-genre.png') no-repeat;
+    background-size: 100% 100%;
+    padding-top: 100px !important;
+    padding-bottom: 50px !important;
+    position: relative;
+}
+
+.genre-box-title {
+    background: url('../assets/img/title-bg-genre.png') no-repeat;
+    display: inline-block;
+    padding:10px 60px 8px 40px;
+    background-size: 100% 100%;
+    position: absolute;
+    left: -10px;
+    top: 40px;
+}
+
+.genre-box-square {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.genre-image {
+    position: relative;
+    width: 150px;
+    margin-top: -100px;
+    z-index: 5;
+}
+
+.earn-box {
+    background: url('../assets/img/bg-body-earn.png') no-repeat;
+    background-size: 100% 100%;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+    position: relative;
+}
+
+.earn-image {
+    position: relative;
+    width: 60px;
+    z-index: 5;
+    margin-top: 20px;
 }
 
 /* `sm` applies to small devices (landscape phones, less than 576px) */
@@ -145,5 +238,4 @@ a, a:hover {
 
 /* `xxxl` applies to x-large devices (large desktops, less than 1900px) */
 @media (min-width: 1900px) {
-    
 }
