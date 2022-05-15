@@ -36,7 +36,7 @@ a, a:hover {
     background: url('../assets/img/craft-trade-bg.png');
     background-size: cover;
     background-position: left;
-    padding-top: 5em;
+    padding-top: 3em;
 }
 
 #tokenomics {
@@ -79,7 +79,7 @@ a, a:hover {
     max-height: 100vh;
     background: #040216;
     transition: all .5s;
-    z-index: 10;
+    z-index: 11;
     margin-top: -100vh;
 }
 
@@ -94,6 +94,10 @@ a, a:hover {
 
 .nav.active {
     margin-top: 0;
+}
+
+.nav ul {
+    list-style: none !important;
 }
 
 .circle-slider {
@@ -211,6 +215,24 @@ a, a:hover {
     margin-top: 20px;
 }
 
+.craft-box {
+    background: url('../assets/img/bg-body-craft.png') no-repeat;
+    background-size: 100% 100%;
+    padding-top: 100px !important;
+    padding-bottom: 50px !important;
+    position: relative;
+}
+
+.craft-box-title {
+    background: url('../assets/img/title-bg-craft.png') no-repeat;
+    display: inline-block;
+    padding:10px 60px 8px 40px;
+    background-size: 100% 100%;
+    position: absolute;
+    left: -10px;
+    top: 40px;
+}
+
 /* `sm` applies to small devices (landscape phones, less than 576px) */
 @media (min-width: 576px) {
     
@@ -218,24 +240,164 @@ a, a:hover {
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (min-width: 768px) {
-    
+    .earn-image {
+        width: 47px;
+    }
+    .matrix::after {
+        content: url('../assets/img/matrix-number.svg');
+        position: absolute;
+        top: 200px;
+        right: 10%;
+        width: 20%;
+        z-index: 10;
+    }
+    #craft {
+        background-position: center;
+    }
 }
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (min-width: 992px) {
+    :root {
+        font-size: 16px;
+    }
+    .nav { 
+        position: relative;
+        margin-top: 0;
+        display: block;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background: transparent;
+        transition: all .5s;
+        min-height: auto;
+    }
     
+    .nav ul {
+        display: block;
+        float: right;
+    }
+
+    .nav ul li {
+        display: inline-block;
+    }
+
+    .genre-image {
+        margin-top: -90px;
+        margin-right: -40px;
+    }
+
+    .circle-slider {
+        width: 500px;
+        height: 500px;
+    }
+    .circle-slider-block {
+        width: 800px;
+        height: 800px;
+    }
+    .circle-slider-icon img {
+        width: 80px;
+    }
+    .circle-slider-arrow-left {
+        left: 25%;
+    }
+    .circle-slider-arrow-right {
+        right: 25%;
+    }
+    #earn {
+        padding-top: 8em;
+    }
+    .earn-image {
+        margin-top: 50px;
+        width: 65px;
+    }
+    .matrix::after {
+        width: 25%;
+        right: 8%;
+    }
+    .genre-box-title, .craft-box-title {
+        left: -49px;
+    }
+    .circle-slider-icon .circle-slider-text {
+        opacity: 1;
+        font-size: 12px;
+        font-family: 'Saira';
+    }
+
+    .circle-slider-icon .circle-slider-text span {
+        opacity: 0;
+    }
+
+    .circle-slider-block.active .circle-slider-icon .circle-slider-text {
+        font-size: 20px;
+        font-family: 'Syncopate';
+    }
+    
+    .circle-slider-block.active .circle-slider-icon .circle-slider-text span {
+        opacity: 1;
+    }
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (min-width: 1200px) {
-    
+    #earn {
+        padding-top: 16em;
+    }
+    .earn-image {
+        margin-top: 40px;
+        width: 70px;
+    }
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (min-width: 1400px) {
-    
+    .circle-slider {
+        width: 700px;
+        height: 700px;
+    }
+    .circle-slider-block {
+        width: 1100px;
+        height: 1100px;
+    }
+    .circle-slider-icon img {
+        width: 110px;
+    }
+    .circle-slider-icon .circle-slider-text {
+        font-size: 16px;
+    }
+    .circle-slider-block.active .circle-slider-icon .circle-slider-text {
+        font-size: 30px;
+    }
+    .circle-slider-arrow {
+        bottom: 32%;
+    }
+    .genre-image {
+        width: 191px;
+    }
+    .genre-box, .earn-box, .craft-box {
+        padding-bottom: 100px !important;
+    }
+    .earn-image {
+        width: 81px;
+    }
+    .matrix::after {
+        width: 21%;
+        right: 18%;
+    }
+    #home {
+        background-position: bottom center;
+    }
+    #genre {
+        background-position: top center;
+    }
 }
 
 /* `xxxl` applies to x-large devices (large desktops, less than 1900px) */
 @media (min-width: 1900px) {
+    #genre::after {
+        bottom: -35vh !important;
+    }
+    #earn {
+        background-position: center 75%;
+    }
 }
