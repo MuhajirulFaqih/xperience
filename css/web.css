@@ -200,6 +200,7 @@ a, a:hover {
     z-index: 5;
 }
 
+
 .earn-box {
     background: url('../assets/img/bg-body-earn.png') no-repeat;
     background-size: 100% 100%;
@@ -231,6 +232,66 @@ a, a:hover {
     position: absolute;
     left: -10px;
     top: 40px;
+}
+
+.tokenomics-image {
+    width: 150px;
+}
+
+.tokenomics-box {
+    padding: 3em;
+    padding-top: 5em;
+    width: 100%;
+    background: url("../assets/img/tokenomic-box.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.tooltips-chart {
+    color: #FFFFFF;
+    position: absolute;
+    pointer-events: none;
+    text-align: right;
+    top: -3em;
+    right: -1em;
+}
+
+.tooltips-chart div {
+    margin-top: 10px;
+}
+
+.tooltips-chart-line label {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: 1px solid #FFFFFF;
+}
+
+.tooltips-chart-line span {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.pie-chart-inner::after {
+    position: absolute;
+    content: url('../assets/img/pie-inner.svg');
+    width: 60px;
+    top: 47.5%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+}
+.pie-chart-outer {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    z-index: 0;
 }
 
 /* `sm` applies to small devices (landscape phones, less than 576px) */
