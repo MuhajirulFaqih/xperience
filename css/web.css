@@ -390,6 +390,10 @@ a, a:hover {
 .form-xperience:focus {
     box-shadow: 0px 0px 4px #AD58FF;
 }
+.img-roadmap-pin {
+    position: relative;
+    margin-bottom: -35px;
+}
 
 /* `sm` applies to small devices (landscape phones, less than 576px) */
 @media (min-width: 576px) {
