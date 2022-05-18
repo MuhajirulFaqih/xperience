@@ -24,8 +24,21 @@
 .btn-2 {
     padding: 14px 16px;
 }
+.border-none {
+    border: none !important;
+}
+.outline-none {
+    outline: none !important;
+}
 .text-gradient {
     background: linear-gradient(91.88deg, #5E37FF 24.73%, #9813FF 76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.text-gradient-2 {
+    background: linear-gradient(135.84deg, #5E6EFF 0%, #937BFD 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -91,6 +104,9 @@
 }
 .overflow-hidden {
     overflow: hidden !important;
+}
+.opacity-offset-8 {
+    opacity: 0.8;
 }
 .rounded-8 {
     border-radius: 8px;
