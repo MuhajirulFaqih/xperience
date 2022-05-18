@@ -294,6 +294,90 @@ a, a:hover {
     z-index: 0;
 }
 
+.x-online-element-1, .x-online-element-2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 80%;
+}
+
+.x-online-element-2 {
+    right: 0;
+    left: auto;
+}
+
+.x-online-element-1 div {
+    padding: 2em;
+    background: url('../assets/img/x-online-frame.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.x-online-overlay {
+    position: absolute;
+    background: #080534;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.line-yellow {
+    position: relative;
+}
+
+.line-yellow::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    background: #CCCC33;
+    width: 40px;
+    height: 4px;
+    left: 0;
+}
+
+.bg-team {
+    padding: 2em 3em;
+    background: url('../assets/img/team-frame.png') no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 3em;
+}
+
+.bg-quotes-team {
+    background: #5F14C4;
+    padding: 8px;
+    position: relative;
+}
+
+.bg-quotes-team::before {
+    position: absolute;
+    content: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 1L1 1L1 5' stroke='%23CCCC33' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    left: -0.5em;
+    top: -0.5em;
+}
+.bg-quotes-team::after {
+    position: absolute;
+    content: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 1L5 5' stroke='%23CCCC33' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    right: -0.5em;
+    top: -0.5em;
+
+}
+
+.bg-quotes-team-element::before {
+    position: absolute;
+    content: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1V5H5' stroke='%23CCCC33' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    left: -0.5em;
+    bottom: -0.5em;
+}
+.bg-quotes-team-element::after {
+    position: absolute;
+    content: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 1V5H1' stroke='%23CCCC33' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    right: -0.5em;
+    bottom: -0.5em;
+}
+
 /* `sm` applies to small devices (landscape phones, less than 576px) */
 @media (min-width: 576px) {
     

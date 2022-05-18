@@ -2,6 +2,9 @@
 .bg-blue-gradient {
     background: linear-gradient(135.84deg, #5E6EFF 0%, #937BFD 100%);
 }
+.bg-blue-dark-gradient {
+    background: linear-gradient(135.84deg, #5E37FF 0%, #9813FF 100%);
+}
 .bg-light-gradient {
     background: rgba(255, 255, 255, 0.2);
 }
@@ -10,6 +13,10 @@
 }
 .bg-semitransparent {
     background: rgba(255, 255, 255, 0.2);
+}
+.bg-glass {
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(8px);
 }
 .btn-1 {
     padding: 12px 24px;
@@ -88,6 +95,12 @@
 .rounded-8 {
     border-radius: 8px;
 }
+.rounded-8-top {
+    border-radius: 8px 8px 0 0;
+}
+.rounded-8-bottom {
+    border-radius: 0 0 8px 8px;
+}
 .rounded-16 {
     border-radius: 16px;
 }
@@ -124,6 +137,9 @@
 .lh-120percent {
     line-height: 120% !important;
 }
+.ls-2 {
+    letter-spacing: .02rem;
+}
 .spacer-96 {
     margin-top: 96px;
 }
@@ -154,6 +170,10 @@
 .z-index-2 {
     position: relative;
     z-index: 2;
+}
+.z-index-3 {
+    position: relative;
+    z-index: 3;
 }
 
 /* End Utility */
