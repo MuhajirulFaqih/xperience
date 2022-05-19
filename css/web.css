@@ -255,6 +255,12 @@ a, a:hover {
     right: -1em;
 }
 
+.h-chart {
+    width: 230px;
+    height: 230px;
+    display: inline-block;
+}
+
 .tooltips-chart div {
     margin-top: 10px;
 }
@@ -287,8 +293,8 @@ a, a:hover {
     top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
+    width: 230px;
+    height: 230px;
     border-radius: 50%;
     border: 1px solid #FFFFFF;
     z-index: 0;
@@ -397,7 +403,20 @@ a, a:hover {
 
 /* `sm` applies to small devices (landscape phones, less than 576px) */
 @media (min-width: 576px) {
-    
+    .tokenomics-box {
+        padding: 1rem 5rem;
+        padding-top: 3rem;
+    }
+    .tokenomics-image {
+        margin-top: -80px;
+    }
+    .x-online-element-1 {
+        left: -20%;
+    }
+    .x-online-element-2 {
+        left: auto;
+        right: -20%;
+    }
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
@@ -415,6 +434,16 @@ a, a:hover {
     }
     #craft {
         background-position: center;
+    }
+    .tokenomics-image {
+        margin-top: -200px;
+    }
+    .x-online-element-1 {
+        left: -50%;
+    }
+    .x-online-element-2 {
+        left: auto;
+        right: -50%;
     }
 }
 
@@ -498,6 +527,23 @@ a, a:hover {
     .circle-slider-block.active .circle-slider-icon .circle-slider-text span {
         opacity: 1;
     }
+    .tokenomics-box {
+        padding: 2rem 5rem;
+        padding-top: 3rem;
+    }
+    .h-chart, .pie-chart-outer {
+        width: 300px;
+        height: 300px;
+    }
+    .pie-chart-inner::after {
+        width: 130px;
+        top: 48.5%;
+    }
+    .tokenomics-image {
+        width: 200px;
+        margin-top: -250px;
+        padding-bottom: 50px;
+    }
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
@@ -508,6 +554,37 @@ a, a:hover {
     .earn-image {
         margin-top: 40px;
         width: 70px;
+    }
+    .h-chart, .pie-chart-outer {
+        width: 350px;
+        height: 350px;
+    }
+    .pie-chart-inner::after {
+        width: 150px;
+        top: 48.7%;
+        left: 49.8%;
+    }
+    .tokenomics-box {
+        padding-top: 4rem;
+    }
+    .tokenomics-image {
+        width: 250px;
+        margin-top: -250px;
+        padding-bottom: 50px;
+    }
+    .x-online-element-1 {
+        margin-top: 53px;
+        left: -35%;
+        width: 75%;
+    }
+    .x-online-element-2 {
+        left: auto;
+        right: -35%;
+        width: 75%;
+    }
+    .bg-team {
+        min-height: 596px;
+        margin-bottom: 20px;
     }
 }
 
@@ -551,6 +628,16 @@ a, a:hover {
     }
     #genre {
         background-position: top center;
+    }
+    .x-online-element-1 {
+        margin-top: 20px;
+        left: -50%;
+        width: 80%;
+    }
+    .x-online-element-2 {
+        left: auto;
+        right: -40%;
+        width: 100%;
     }
 }
 
