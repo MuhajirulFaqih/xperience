@@ -586,9 +586,6 @@ a, a:hover {
         min-height: 596px;
         margin-bottom: 20px;
     }
-    #home, #genre, #earn, #craft, #tokenomics, #x-online, #roadmap {
-        height: 100vh;
-    }
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
