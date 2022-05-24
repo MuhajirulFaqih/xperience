@@ -56,9 +56,9 @@ function onScroll() {
     });
 }
 
-docSlider.init({
-  speed : 600,
-  startSpeed : null,
-  easing : 'ease',
-  scrollReset : false
-});
+// docSlider.init({
+//   speed : 600,
+//   startSpeed : null,
+//   easing : 'ease',
+//   scrollReset : false
+// });
