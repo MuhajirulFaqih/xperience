@@ -409,6 +409,26 @@ a, a:hover {
     position: relative;
     margin-bottom: -35px;
 }
+.up-down {
+    -webkit-animation: updown 4s linear infinite;
+	        animation: updown 4s linear infinite;
+}
+
+@keyframes updown {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(20px);
+                transform: translateY(20px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+}
+  
 
 /* `sm` applies to small devices (landscape phones, less than 576px) */
 @media (min-width: 576px) {
