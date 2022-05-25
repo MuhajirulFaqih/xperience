@@ -13,25 +13,24 @@
     <link rel="stylesheet" href="css/utility.css"/>
     <link rel="stylesheet" href="css/aos.css"/>
     <link rel="stylesheet" href="css/bg-svg.css"/>
-    <!-- <link rel="stylesheet" href="css/onepagescroll.css"/> -->
 </head>
 
 <body>
-    <div class="docSlider">
+    <div data-scroll-container>
         <section>
             <div class="inner">
                 <section id="home" class="pt-4 px-3 pt-xl-5 position-relative overflow-hidden">
                     <div class="container z-index-2 d-lg-none pt-lg-4">
-                    <div class="row text-white d-flex justify-content-center align-items-center">
-                        <div class="col-6 col-sm-4">
-                            <a href="" class="fs-30 d-inline-block" data-aos="fade-up">
-                                <img src="assets/img/logo.png" alt="" class="w-100">
-                            </a>
+                        <div class="row text-white d-flex justify-content-center align-items-center">
+                            <div class="col-6 col-sm-4">
+                                <a href="" class="fs-30 d-inline-block" data-aos="fade-up">
+                                    <img src="assets/img/logo.png" alt="" class="w-100">
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-8 text-end">
+                                <div class="icon-nav-toggle cursor-pointer" data-aos="fade-up"></div>
+                            </div>
                         </div>
-                        <div class="col-6 col-sm-8 text-end">
-                            <div class="icon-nav-toggle cursor-pointer" data-aos="fade-up"></div>
-                        </div>
-                    </div>
                     </div>
                     <div class="nav mt-lg-4">
                         <div class="w-100" data-aos="fade-up">
@@ -76,7 +75,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-10 col-md-6 offset-sm-1 offset-md-0 p-5 py-md-0 px-md-5">
-                                <img src="assets/img/hero-illustration.png" alt="" class="w-100">
+                                <img src="assets/img/hero-illustration.png" alt="" class="w-100"  data-scroll data-scroll-speed="5">
                             </div>
                         </div>
                     </div>
@@ -95,11 +94,9 @@
                                     <div class="circle-slider-block active">
                                         <div class="circle-slider-icon">
                                             <img src="assets/img/carousel/abundance.png" alt="" class="up-down">
-                                            <div class="up-down">
-                                                <div class="circle-slider-text mt-2 mt-lg-4 fs-12">
-                                                    ABUNDANCE<br/>
-                                                    <span class="text-gradient d-inline-block">WORLD</span>
-                                                </div>
+                                            <div class="circle-slider-text mt-2 mt-lg-4 fs-12">
+                                                ABUNDANCE<br/>
+                                                <span class="text-gradient d-inline-block">WORLD</span>
                                             </div>
                                         </div>
                                     </div>
@@ -148,7 +145,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 col-xxl-5 pe-lg-0 pe-xxl-5 position-relative">
-                                <div class="genre-box px-4 mt-sm-4">
+                                <div class="genre-box px-4 mt-sm-4" data-scroll data-scroll-speed="2">
                                     <div class="genre-box-title fw-bold ff-syncopate fs-20 fs-lg-24">GENRE</div>
                                     <div class="genre-box-body">
                                         <div class="row d-flex align-items-start mt-3">
@@ -173,7 +170,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 text-end">
-                                    <img src="assets/img/pose-2.png" alt="" class="genre-image">
+                                    <img src="assets/img/pose-2.png" alt="" class="genre-image" data-scroll>
                                 </div>
                             </div>
                         </div>
@@ -196,8 +193,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-5 offset-lg-1 pt-4 pt-md-5 d-none d-md-block">
-                                <img src="assets/img/earn-island.png" alt="" class="w-100 mt-md-5">
+                            <div class="col-12 col-md-6 col-lg-5 offset-lg-1 pt-4 pt-md-5 d-none d-md-block" data-scroll>
+                                <img src="assets/img/earn-island.png" alt="" class="w-100 mt-md-5 up-down">
                             </div>
                             <div class="col-12 text-center pb-sm-5">
                                 <img src="assets/img/pose-3.png" alt="" class="earn-image mb-sm-5">
@@ -215,7 +212,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-md-8 col-lg-5 ps-xl-5">
-                                <div class="craft-box px-4">
+                                <div class="craft-box px-4 up-down">
                                     <div class="craft-box-title fw-bold ff-syncopate fs-20 fs-xxl-24">CRAFT / TRADE / STAKE</div>
                                     <div class="genre-box-body mt-5">
                                         <div class="row d-flex align-items-start mt-3">
@@ -259,7 +256,7 @@
                         <div class="row">
                             <div class="col-12 col-sm-9 col-md-8 col-lg-7 text-center offset-sm-3 offset-md-4 offset-lg-5">
                                 <div class="d-inline-block text-white fw-bold ff-syncopate fs-32 fs-xl-48 fs-xxl-72">TOKENOMICS</div>
-                                <div class="tokenomics-box mt-4">
+                                <div class="tokenomics-box mt-4 up-down">
                                     <div class="row">
                                         <div class="col-12 text-center">
                                             <div class="h-chart my-sm-4 pb-sm-5 position-relative">
@@ -685,7 +682,7 @@
     <script src="js/aos.js"></script>
     <script src="js/lottie.js"></script>
     <script src="js/background.js"></script>
-    <!-- <script src="js/onepagescroll.js"></script> -->
+    <script src="js/locomotive.js"></script>
     <script src="js/app.js"></script>
     <script src="js/icon.js"></script>
     <script src="js/circle-carousel.js"></script>

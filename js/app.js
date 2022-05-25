@@ -62,3 +62,12 @@ function onScroll() {
 //   easing : 'ease',
 //   scrollReset : false
 // });
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true,
+    repeat: true,
+});
+
+scroll.on('scroll', (args) => {
+})
