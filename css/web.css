@@ -302,9 +302,15 @@ a, a:hover {
     z-index: 5;
 }
 
+.box-lottie {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 
 .earn-box {
-    background: url('../assets/img/bg-body-earn.png') no-repeat;
+    /* background: url('../assets/img/bg-body-earn.png') no-repeat; */
     background-size: 100% 100%;
     padding-top: 80px !important;
     padding-bottom: 80px !important;
@@ -451,6 +457,23 @@ a, a:hover {
     background: url('../assets/img/team-frame.png') no-repeat;
     background-size: 100% 100%;
     padding-bottom: 3em;
+    position: relative;
+}
+
+.bg-team img {
+    transition: all 1s;
+}
+
+.bg-team .team-overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.bg-team:hover .team-overlay {
+    opacity: 1;
 }
 
 .bg-quotes-team {
@@ -574,9 +597,6 @@ a, a:hover {
 @media (min-width: 992px) {
     :root {
         font-size: 16px;
-    }
-    .bg-lottie {
-        width: 100%;
     }
     .nav { 
         position: relative;
@@ -774,5 +794,8 @@ a, a:hover {
     }
     #earn {
         background-position: center 75%;
+    }
+    .bg-lottie {
+        width: 100%;
     }
 }

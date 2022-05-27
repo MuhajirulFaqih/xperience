@@ -66,3 +66,13 @@ var params = {
 };
 var anim;
 anim = lottie.loadAnimation(params);
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true,
+    repeat: true,
+});
+
+scroll.on('scroll', (args) => {
+    if(typeof args.currentElements['earn-box'] === 'object') {
+    }
+})
