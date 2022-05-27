@@ -311,7 +311,7 @@ a, a:hover {
 
 
 .earn-box {
-    /* background: url('../assets/img/bg-body-earn.png') no-repeat; */
+    background: url('../assets/img/bg-body-earn.png') no-repeat;
     background-size: 100% 100%;
     padding-top: 80px !important;
     padding-bottom: 80px !important;
