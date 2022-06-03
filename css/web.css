@@ -806,6 +806,9 @@ a, a:hover {
         right: -70%;
         margin-top: 0%;
     }
+    .genre-box {
+        margin-top: 80px !important;
+    }
 }
 
 /* `xxxl` applies to x-large devices (large desktops, less than 1900px) */

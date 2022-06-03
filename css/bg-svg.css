@@ -29,15 +29,20 @@
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (min-width: 1200px) {
     #genre::after {
-        bottom: -244px;
+        bottom: -280px;
     }
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (min-width: 1400px) {
-    
+    #genre::after {
+        bottom: -310px;
+    }
 }
 
 /* `xxxl` applies to x-large devices (large desktops, less than 1900px) */
 @media (min-width: 1900px) {
+    #genre::after {
+        bottom: -350px;
+    }
 }
