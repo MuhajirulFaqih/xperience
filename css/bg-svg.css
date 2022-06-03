@@ -43,6 +43,6 @@
 /* `xxxl` applies to x-large devices (large desktops, less than 1900px) */
 @media (min-width: 1900px) {
     #genre::after {
-        bottom: -350px;
+        bottom: -400px;
     }
 }

@@ -813,9 +813,6 @@ a, a:hover {
 
 /* `xxxl` applies to x-large devices (large desktops, less than 1900px) */
 @media (min-width: 1900px) {
-    #genre::after {
-        bottom: -35vh !important;
-    }
     #earn {
         background-position: center 75%;
     }
