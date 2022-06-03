@@ -11,6 +11,9 @@ function initSlider() {
         $(single_block).css('transform', `translateX(-50%) rotate(${rotateValue}deg)`);
         $(single_block_inner).css('transform', `rotate(${ - (rotateValue)}deg)`);
     }
+
+    $('.circle-slider-desc').hide();
+    $('#circle-slider-desc-abundance').show();
 }
 
 $('.circle-slider-arrow-right').click(function () {
@@ -34,8 +37,14 @@ $('.circle-slider-arrow-right').click(function () {
         var indexNew = (indexActive - 1);
         var indexTo = (indexActive - 1);
     }
-    $(block[indexNew]).addClass('active');
+    var blockActive = $(block[indexNew]).addClass('active');
     $(elementActive).removeClass('active');
+    var idString = blockActive.attr('id');
+    var replaceCircle = idString.replace('-circle', '');
+    $(".circle-slider-label").html(replaceCircle)
+    $('.circle-slider-desc').hide(0, function() {
+        $(`#circle-slider-desc-${replaceCircle}`).show(0);
+    });
     initSliderReverse(indexTo, 'right')
 })
 
@@ -57,8 +66,14 @@ $('.circle-slider-arrow-left').click(function () {
         var indexNew = indexActive;
         var indexTo = indexActive;
     }
-    $(block[indexNew]).addClass('active');
+    var blockActive = $(block[indexNew]).addClass('active');
     $(elementActive).removeClass('active');
+    var idString = blockActive.attr('id');
+    var replaceCircle = idString.replace('-circle', '');
+    $(".circle-slider-label").html(replaceCircle)
+    $('.circle-slider-desc').hide(0, function() {
+        $(`#circle-slider-desc-${replaceCircle}`).show(0);
+    });
     initSliderReverse(indexTo, 'left')
 })
 
@@ -110,7 +125,6 @@ function initLeft(indexPage, index) {
 }
 
 function initRight(indexPage, index) {
-    console.log(indexPage, index)
     if (indexPage == 4) {
         var val = index;
     } else if (indexPage == 3) {

@@ -223,6 +223,7 @@ a, a:hover {
     transition: all .8s;
 }
 
+
 .circle-slider-icon {
     transition: all .8s;
 }
@@ -238,6 +239,11 @@ a, a:hover {
 }
 .circle-slider-block.active > .circle-slider-icon {
     transform: scale(2) !important;
+}
+
+.circle-slider-block.active img {
+    -webkit-animation: updown 4s linear infinite;
+    animation: updown 4s linear infinite;
 }
 
 .circle-slider-icon .circle-slider-text {
@@ -272,12 +278,18 @@ a, a:hover {
     right: 10%;
 }
 
+.circle-slider-label {
+    text-transform: uppercase;
+    transition: all 1s;
+}
+
 .genre-box {
     background: url('../assets/img/bg-body-genre.png') no-repeat;
     background-size: 100% 100%;
     padding-top: 100px !important;
     padding-bottom: 50px !important;
     position: relative;
+    transition: all 1s;
 }
 
 .genre-box-title {
