@@ -87,6 +87,7 @@ const scroll = new LocomotiveScroll({
 });
 
 scroll.on('scroll', (args) => {
-    if(typeof args.currentElements['earn-box'] === 'object') {
+    if(typeof args.currentElements['roadmap-flow'] === 'object') {
+        
     }
 })
