@@ -30,6 +30,21 @@
 .outline-none {
     outline: none !important;
 }
+.text-orange {
+    color: #dda21e !important;
+}
+.text-red {
+    color: #fd462a !important;
+}
+.text-blue {
+    color: #2b83c3 !important;
+}
+.text-purple {
+    color: #fa23e8 !important;
+}
+.text-green {
+    color: #33cf0b !important;
+}
 .text-gradient {
     background: linear-gradient(91.88deg, #5E37FF 24.73%, #9813FF 76%);
     -webkit-background-clip: text;
