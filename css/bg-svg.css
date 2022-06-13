@@ -13,44 +13,47 @@
     z-index: 8;
     left: 0;
     width: 100%;
+    display: none;
 }
 
 /* `sm` applies to small devices (landscape phones, less than 576px) */
 @media (min-width: 576px) {
-    #genre::after, #cloud {
+    #cloud {
         bottom: -80px;
     }
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (min-width: 768px) {
-    #genre::after, #cloud {
+    #cloud {
         bottom: -150px;
     }
 }
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (min-width: 992px) {
-    
+    #cloud {
+        display: block;
+    }
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (min-width: 1200px) {
-    #genre::after, #cloud {
+    #cloud {
         bottom: -280px;
     }
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (min-width: 1400px) {
-    #genre::after, #cloud {
+    #cloud {
         bottom: -340px;
     }
 }
 
 /* `xxxl` applies to x-large devices (large desktops, less than 1900px) */
 @media (min-width: 1900px) {
-    #genre::after, #cloud {
+    #cloud {
         bottom: -350px;
     }
 }
