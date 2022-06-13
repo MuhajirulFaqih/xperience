@@ -585,14 +585,21 @@ a, a:hover {
     .earn-image {
         width: 47px;
     }
-    .matrix::after {
+    .matrix {
+        position: absolute;
+        top: 200px;
+        right: 10%;
+        width: 40%;
+        z-index: 10;
+    }
+    /* .matrix::after {
         content: url('../assets/img/matrix-number.svg');
         position: absolute;
         top: 200px;
         right: 10%;
         width: 20%;
         z-index: 10;
-    }
+    } */
     #craft {
         background-position: center;
     }
