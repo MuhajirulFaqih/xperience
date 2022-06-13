@@ -537,7 +537,7 @@ a, a:hover {
 }
 .img-roadmap-pin {
     position: relative;
-    margin-bottom: -35px;
+    margin-bottom: -40px;
 }
 .up-down {
     -webkit-animation: updown 4s linear infinite;
