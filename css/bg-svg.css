@@ -40,7 +40,7 @@
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (min-width: 1200px) {
     #cloud {
-        bottom: -300px;
+        bottom: -350px;
     }
 }
 
