@@ -14,6 +14,7 @@
     left: 0;
     width: 100%;
     display: none;
+    pointer-events: none;
 }
 
 /* `sm` applies to small devices (landscape phones, less than 576px) */
@@ -40,14 +41,14 @@
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (min-width: 1200px) {
     #cloud {
-        bottom: -450px;
+        bottom: -340px;
     }
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (min-width: 1400px) {
     #cloud {
-        bottom: -450px;
+        bottom: -340px;
     }
 }
 
