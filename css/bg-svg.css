@@ -40,14 +40,14 @@
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (min-width: 1200px) {
     #cloud {
-        bottom: -350px;
+        bottom: -450px;
     }
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (min-width: 1400px) {
     #cloud {
-        bottom: -340px;
+        bottom: -450px;
     }
 }
 
