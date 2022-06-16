@@ -102,6 +102,16 @@ a, a:hover {
     z-index: -1;
 }
 
+.bg-lottie-fixed-outer {
+    position: fixed relative;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
 .bg-lottie-outer {
     position: absolute;
     overflow: hidden;
@@ -128,9 +138,9 @@ a, a:hover {
 
 #earn {
     min-height: 100vh;
-    background: url('../assets/img/earn-bg.svg');
+    /* background: url('../assets/img/earn-bg.svg');
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     padding-top: 5em;
 }
 
@@ -160,16 +170,16 @@ a, a:hover {
 
 #roadmap {
     min-height: 100vh;
-    /* background: url('../assets/img/roadmap-bg.svg'); */
+    /* background: url('../assets/img/roadmap-bg.svg');
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     padding-top: 5em;
 }
 #team {
     min-height: 100vh;
-    background: url('../assets/img/team-bg.svg');
+    /* background: url('../assets/img/team-bg.svg');
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     padding-top: 5em;
 }
 
