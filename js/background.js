@@ -3,7 +3,7 @@ var params = {
     container: document.getElementById('home-background'),
     renderer: 'svg',
     loop: true,
-    autoplay: true,
+    autoplay: false,
     animationData: headerBackground
 };
 var anim;
@@ -15,7 +15,7 @@ var params = {
     container: document.getElementById('genre-background'),
     renderer: 'svg',
     loop: true,
-    autoplay: true,
+    autoplay: false,
     animationData: genreBackground
 };
 var anim;
@@ -27,7 +27,7 @@ var params = {
     container: document.getElementById('craft-background'),
     renderer: 'svg',
     loop: true,
-    autoplay: true,
+    autoplay: false,
     animationData: craftBackground
 };
 var anim;
@@ -39,7 +39,7 @@ var params = {
     container: document.getElementById('tokenomics-background'),
     renderer: 'svg',
     loop: true,
-    autoplay: true,
+    autoplay: false,
     animationData: tokenomicsBackground
 };
 var anim;
@@ -50,7 +50,7 @@ var params = {
     container: document.getElementById('x-online-background'),
     renderer: 'svg',
     loop: true,
-    autoplay: true,
+    autoplay: false,
     animationData: xOnlineBackground
 };
 var anim;
@@ -61,7 +61,7 @@ var params = {
     container: document.getElementById('roadmap-background'),
     renderer: 'svg',
     loop: true,
-    autoplay: true,
+    autoplay: false,
     animationData: roadmapBackground
 };
 var anim;
@@ -72,7 +72,7 @@ var params = {
     container: document.getElementById('dashboard-mockup'),
     renderer: 'svg',
     loop: true,
-    autoplay: true,
+    autoplay: false,
     animationData: dashboardData
 };
 
@@ -85,7 +85,7 @@ var params = {
     container: document.getElementById('matrix'),
     renderer: 'svg',
     loop: true,
-    autoplay: true,
+    autoplay: false,
     animationData: animationData
 };
 
