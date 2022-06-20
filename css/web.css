@@ -391,7 +391,7 @@ a, a:hover {
 }
 
 .tokenomics-image {
-    width: 150px;
+    width: 200px;
 }
 
 .tokenomics-box {
@@ -736,7 +736,7 @@ a, a:hover {
         top: 48.5%;
     }
     .tokenomics-image {
-        width: 200px;
+        width: 250px;
         margin-top: -250px;
         padding-bottom: 50px;
     }
@@ -769,7 +769,7 @@ a, a:hover {
         padding-top: 4rem;
     }
     .tokenomics-image {
-        width: 250px;
+        width: 300px;
         margin-top: -342px;
         padding-bottom: 50px;
     }
