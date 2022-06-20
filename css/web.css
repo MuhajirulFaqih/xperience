@@ -753,6 +753,10 @@ a, a:hover {
     #earn {
         padding-top: 16em;
     }
+    .bg-lottie-outer-top .bg-lottie {
+        top: auto;
+        bottom: 0;
+    }
     .earn-image {
         margin-top: 40px;
     }
