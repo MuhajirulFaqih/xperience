@@ -115,10 +115,10 @@ const scroll = new LocomotiveScroll({
     repeat: true,
 });
 
-scroll.on('scroll', (args) => {
-    if(typeof args.currentElements['cloud'] === 'object') {
-        var progress = args.currentElements['cloud'].progress;
-        var progressPercentage = progress * 100;
-        cloudAnim.goToAndStop(progressPercentage, true)
-    }
-})
+// scroll.on('scroll', (args) => {
+//     if(typeof args.currentElements['cloud'] === 'object') {
+//         var progress = args.currentElements['cloud'].progress;
+//         var progressPercentage = progress * 100;
+//         cloudAnim.goToAndStop(progressPercentage, true)
+//     }
+// })

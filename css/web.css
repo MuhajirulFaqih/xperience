@@ -102,6 +102,11 @@ a, a:hover {
     z-index: -1;
 }
 
+.bg-lottie-outer-top .bg-lottie {
+    top: 0;
+    bottom: auto;
+}
+
 .bg-lottie-fixed-outer {
     position: fixed relative;
     overflow: hidden;
@@ -136,11 +141,22 @@ a, a:hover {
     background-position: center;
 }
 
+#genre::before {
+    content: url('../assets/img/genre-top.svg');
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1928px;
+    z-index: -1;
+}
+
 #earn {
+    z-index: 1;
     min-height: 100vh;
-    /* background: url('../assets/img/earn-bg.svg');
+    background: url('../assets/img/earn-bg.svg');
     background-size: cover;
-    background-position: center; */
+    background-position: bottom center;
     padding-top: 5em;
 }
 
@@ -162,25 +178,34 @@ a, a:hover {
 
 #x-online {
     min-height: 100vh;
-    /* background: url('../assets/img/x-online-bg.svg'); */
+    background: url('../assets/img/x-online-bg.svg');
+    background-size: cover;
+    background-position: bottom;
+    padding-top: 5em;
+}
+
+#partner-outer {
+    background: url('../assets/img/partner-bg.svg');
+    background-size: cover;
+    background-position: top;
+}
+
+#roadmap {
+    background: url('../assets/img/roadmap-bg.svg');
     background-size: cover;
     background-position: center;
     padding-top: 5em;
 }
-
-#roadmap {
-    min-height: 100vh;
-    /* background: url('../assets/img/roadmap-bg.svg');
+#team {
+    background: url('../assets/img/team-bg.svg');
     background-size: cover;
-    background-position: center; */
+    background-position: bottom;
     padding-top: 5em;
 }
-#team {
-    min-height: 100vh;
-    /* background: url('../assets/img/team-bg.svg');
+#footer {
+    background: url('../assets/img/contact-bg.svg');
     background-size: cover;
-    background-position: center; */
-    padding-top: 5em;
+    background-position: top;
 }
 
 .nav {
@@ -342,9 +367,9 @@ a, a:hover {
 
 .earn-image {
     position: relative;
-    width: 60px;
+    width: 250px;
     z-index: 5;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 .craft-box {
@@ -590,26 +615,20 @@ a, a:hover {
     }
 }
 
+.matrix {
+    display: none;
+}
+
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (min-width: 768px) {
-    .earn-image {
-        width: 47px;
-    }
     .matrix {
         position: absolute;
         top: 200px;
         right: 10%;
         width: 40%;
         z-index: 10;
+        display: block;
     }
-    /* .matrix::after {
-        content: url('../assets/img/matrix-number.svg');
-        position: absolute;
-        top: 200px;
-        right: 10%;
-        width: 20%;
-        z-index: 10;
-    } */
     #craft {
         background-position: center;
     }
@@ -678,7 +697,6 @@ a, a:hover {
     }
     .earn-image {
         margin-top: 50px;
-        width: 65px;
     }
     .matrix::after {
         width: 25%;
@@ -737,7 +755,6 @@ a, a:hover {
     }
     .earn-image {
         margin-top: 40px;
-        width: 70px;
     }
     .h-chart, .pie-chart-outer {
         width: 350px;
@@ -799,9 +816,6 @@ a, a:hover {
     }
     .genre-box, .earn-box, .craft-box {
         padding-bottom: 100px !important;
-    }
-    .earn-image {
-        width: 81px;
     }
     .matrix::after {
         width: 21%;
