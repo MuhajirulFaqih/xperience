@@ -3,7 +3,7 @@ var params = {
     container: document.getElementById('home-background'),
     renderer: 'svg',
     loop: true,
-    autoplay: false,
+    autoplay: true,
     animationData: headerBackground
 };
 var anim;
