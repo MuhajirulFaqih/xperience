@@ -108,7 +108,7 @@ a, a:hover {
 }
 
 .bg-lottie-fixed-outer {
-    position: fixed relative;
+    position: fixed;
     overflow: hidden;
     top: 0;
     bottom: 0;
@@ -129,7 +129,7 @@ a, a:hover {
 
 #home {
     min-height: 100vh;
-    /* background: url('../assets/img/hero-bg.svg'); */
+    background: url('../assets/img/hero-bg.svg');
     background-size: cover;
     background-position: center;
 }
@@ -137,8 +137,8 @@ a, a:hover {
 #genre {
     min-height: 100vh;
     /* background: url('../assets/img/genre-bg.svg'); */
-    background-size: cover;
-    background-position: center;
+    /* background-size: cover;
+    background-position: center; */
 }
 
 #genre::before {
@@ -162,7 +162,7 @@ a, a:hover {
 
 #craft {
     min-height: 100vh;
-    /* background: url('../assets/img/craft-trade-bg.png'); */
+    background: url('../assets/img/craft-trade-bg.png');
     background-size: cover;
     background-position: left;
     padding-top: 3em;
@@ -170,7 +170,7 @@ a, a:hover {
 
 #tokenomics {
     min-height: 100vh;
-    /* background: url('../assets/img/tokenomic-bg.svg'); */
+    background: url('../assets/img/tokenomic-bg.svg');
     background-size: cover;
     background-position: center;
     padding-top: 5em;
@@ -746,6 +746,10 @@ a, a:hover {
         width: 120%;
         right: -65%;
     }
+
+    #home, #craft, #tokenomics {
+        background: none;
+    }
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
@@ -761,8 +765,8 @@ a, a:hover {
         margin-top: 40px;
     }
     .h-chart, .pie-chart-outer {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
     }
     .pie-chart-inner::after {
         width: 150px;

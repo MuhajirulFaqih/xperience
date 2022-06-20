@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div data-scroll-container>
+    <div data-scroll-container class="position-relative">
         <section data-scroll-section>
             <div class="inner">
                 <section id="home" class="pt-4 px-3 pt-xl-5 position-relative overflow-hidden">
@@ -36,10 +36,10 @@
                         <div class="w-100" data-aos="fade-up">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-12 py-4 pb-5 px-4 pe-5 text-end d-lg-none">
+                                    <div class="col-12 py-4 px-4 pe-5 text-end d-lg-none">
                                         <div class="icon-nav-close cursor-pointer"></div>
                                     </div>
-                                    <div class="col-12 text-center text-lg-start">
+                                    <div class="col-12 text-center text-lg-start pb-5 pb-lg-0">
                                         <a href="" class="d-inline-block px-5 px-lg-0 pt-lg-2" data-aos="fade-up">
                                             <img src="assets/img/logo.png" class="w-100 w-lg-logo">
                                         </a>
@@ -79,14 +79,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-lottie-outer">
+                    <div class="bg-lottie-outer d-none d-lg-block">
                         <div id="home-background" class="bg-lottie"></div>
                     </div>
                 </section>
             </div>
         </section>
 
-        <section data-scroll-section class="position-relative">
+        <section class="position-relative" data-scroll-section>
             <div class="inner">
                 <section id="genre" class="pt-4 pt-lg-5 px-3">
                     <div class="container pt-lg-5">
@@ -177,7 +177,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="cloud" data-scroll data-scroll-id="cloud" data-scroll-target="#genre-box"></div>
+                        <!-- <div id="cloud" data-scroll data-scroll-id="cloud" data-scroll-target="#genre-box"></div> -->
                     </div>
                 </section>    
             </div>
@@ -247,7 +247,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-lottie-outer bg-lottie-outer-top">
+                    <div class="bg-lottie-outer d-none d-lg-block bg-lottie-outer-top">
                         <div id="craft-background" class="bg-lottie"></div>
                     </div>
                 </section>
@@ -260,27 +260,33 @@
                     <div class="container">
                         <div class="row">
                             <!-- <h1 class="text-center">COMING SOON</h1> -->
-                            <div class="col-12 col-sm-9 col-md-8 col-lg-7 text-center offset-sm-3 offset-md-4 offset-lg-5">
+                            <div class="col-12 text-center">
                                 <div class="d-inline-block text-white fw-bold ff-syncopate fs-32 fs-xl-48 fs-xxl-72">TOKENOMICS</div>
-                                <div class="tokenomics-box mt-4 up-down">
-                                    <div class="row">
-                                        <div class="col-12 text-center">
-                                            <div class="h-chart my-sm-4 pb-sm-5 position-relative">
-                                                <div id="pie-chart-tooltips"></div>
-                                                <canvas id="pie-chart" class="z-index-2"></canvas>
-                                                <div class="pie-chart-inner"></div>
-                                                <div class="pie-chart-outer"></div>
+                            </div>
+                            <div class="col-12 col-md-8 offset-md-2 px-md-4 px-lg-5 text-center">
+                                <div class="px-md-4">
+                                    <div class="tokenomics-box mt-4 up-down">
+                                        <div class="row">
+                                            <div class="col-12 text-center">
+                                                <div class="h-chart my-sm-4 pb-sm-5 position-relative">
+                                                    <div id="pie-chart-tooltips"></div>
+                                                    <canvas id="pie-chart" class="z-index-2"></canvas>
+                                                    <div class="pie-chart-inner"></div>
+                                                    <div class="pie-chart-outer"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4 text-center text-sm-start text-md-end pt-5">
-                                <img src="assets/img/pose-5.png" alt="" class="tokenomics-image">
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-3 text-center text-sm-start text-md-end pt-5">
+                                <img src="assets/img/pose-5.png" alt="" class="tokenomics-image position-relative z-index-2">
                             </div>
                         </div>
                     </div>
-                    <div class="bg-lottie-outer">
+                    <div class="bg-lottie-outer d-none d-lg-block">
                         <div id="tokenomics-background" class="bg-lottie"></div>
                     </div>
                 </section>
@@ -293,26 +299,18 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12 text-center pt-xl-3 pb-xl-5">
-                                <div class="d-inline-block text-white fw-bold ff-syncopate fs-32 fs-xl-48">X-ONLINE</div>
+                                <div class="d-inline-block text-white fw-bold ff-syncopate fs-32 fs-xl-48">BECOME A CREATOR</div>
                             </div>
-                            <div class="col-12 col-sm-8 col-md-6 offset-sm-2 offset-md-3 pt-5 px-xl-5">
-                                <div class="position-relative px-5">
-                                    <div class="x-online-element-1">
+                            <div class="col-12 col-lg-10 offset-lg-1 pt-5 px-xl-3">
+                                <div class="row position-relative px-5">
+                                    <div class="col-12 col-md-5">
                                         <div>
                                             <img src="assets/img/earn-island.png" alt="" class="w-100">
                                         </div>
-                                        <span class="fs-16 fs-xxl-20 mt-3 d-none d-xl-block">Actively & passively earn presence as a content creator. As our token value grows, your earnings grow.</span>
+                                        <span class="fs-16 fs-xxl-20 mt-3 mb-4 d-inline-block">Actively & passively earn presence as a content creator. As our token value grows, your earnings grow.</span>
                                     </div>
-                                    <div class="z-index-3 px-xl-5">
-                                        <div class="bg-glass rounded-8-top p-4">
-                                            <img src="assets/img/abunance-x-online.png" alt="" class="w-100 py-xl-3">
-                                        </div>
-                                        <button class="bg-blue-dark-gradient text-center px-4 py-3 py-xxl-4 rounded-8-bottom ff-syncopate fs-20 fs-xxl-32 fw-bold d-block border-none outline-none w-100 text-white">LOGIN</button>
-                                    </div>
-                                    <div class="x-online-element-2">
-                                        <div>
-                                            <div id="dashboard-mockup"></div>
-                                        </div>
+                                    <div class="col-md-7">
+                                       <img src="assets/img/dashboard.png" alt="" class="w-100">
                                     </div>
                                 </div>
                             </div>
@@ -322,7 +320,7 @@
             </div>
         </section>
         
-        <section data-scroll-section class="inner d-flex justify-content-center align-items-center" id="partner-outer">
+        <section class="inner d-flex justify-content-center align-items-center" id="partner-outer" data-scroll-section>
             <div class="inner w-100">
                 <section id="partner" class="px-3 pt-xl-5 position-relative overflow-hidden">
                     <div class="container py-5">
@@ -372,8 +370,8 @@
                         <div class="row pb-3 pb-lg-5 position-relative overflow-hidden">
                             <div class="col-12">
                                 <div class="row d-none d-lg-block">
-                                    <div class="col-12 col-sm-8 col-lg-3 offset-sm-2 offset-lg-0">
-                                        <div class="roadmap-pin-animate" data-scroll data-scroll-id="roadmap-flow" data-scroll-direction="horizontal" data-scroll-target="#roadmap" data-scroll-speed="-15">
+                                    <div class="col-12 col-sm-8 col-lg-2 offset-sm-2 offset-lg-0">
+                                        <div class="roadmap-pin-animate" data-scroll data-scroll-id="roadmap-flow" data-scroll-direction="horizontal" data-scroll-target="#roadmap" data-scroll-speed="-18">
                                             <img src="assets/img/roadmap-pin-blue.png" alt="" class="w-100 img-roadmap-pin">
                                         </div>
                                     </div>
@@ -386,10 +384,18 @@
                                 <div class="pb-3">
                                     <img src="assets/img/roadmap-flow-active.svg" alt="" class="w-100">
                                 </div>
-                                <div class="px-4">
-                                    <div class="fs-20 fs-xl-32 ff-syncopate fw-bold mt-2 mb-4 line-yellow">Q1-2022</div>
+                                <div>
+                                    <div class="fs-20 fs-xl-32 ff-syncopate fw-bold mt-2 mb-4 line-yellow">PHASE 1</div>
                                     <div class="fs-16 fs-xl-20 fs-medium">
-                                        Actively & passively earn presence as a content creator. As our token value grows, your earnings grow.
+                                        <ul>
+                                            <li class="pb-2">Dev Team Formed</li>
+                                            <li class="pb-2">3D Asset Library Ideation Platform Ideation</li>
+                                            <li class="pb-2">Tokenomics Ideation</li>
+                                            <li class="pb-2">Setup Social Media</li>
+                                            <li class="pb-2">NFT Genesis Drop 1</li>
+                                            <li class="pb-2">Launch App Prototype</li>
+                                            <li class="pb-2">Birth of our A.I "X"</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -400,10 +406,18 @@
                                 <div class="pb-3">
                                     <img src="assets/img/roadmap-flow.svg" alt="" class="w-100">
                                 </div>
-                                <div class="px-4">
-                                    <div class="fs-20 fs-xl-32 ff-syncopate fw-bold mt-2 mb-4 line-yellow">Q2-2022</div>
+                                <div>
+                                    <div class="fs-20 fs-xl-32 ff-syncopate fw-bold mt-2 mb-4 line-yellow">PHASE 2</div>
                                     <div class="fs-16 fs-xl-20 fs-medium">
-                                        Actively & passively earn presence as a content creator. As our token value grows, your earnings grow.
+                                        <ul>
+                                            <li class="pb-2">Tokenomics Design</li>
+                                            <li class="pb-2">Website Launched</li>
+                                            <li class="pb-2">Seed Invesment Setup</li>
+                                            <li class="pb-2">Marketing Campaign Setup</li>
+                                            <li class="pb-2">V.1 XO App Design</li>
+                                            <li class="pb-2">V.1 Creator App Design</li>
+                                            <li class="pb-2">NFT Augmented Reality Mode</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -414,10 +428,18 @@
                                 <div class="pb-3">
                                     <img src="assets/img/roadmap-flow.svg" alt="" class="w-100">
                                 </div>
-                                <div class="px-4">
-                                    <div class="fs-20 fs-xl-32 ff-syncopate fw-bold mt-2 mb-4 line-yellow">Q3-2022</div>
+                                <div>
+                                    <div class="fs-20 fs-xl-32 ff-syncopate fw-bold mt-2 mb-4 line-yellow">PHASE 3</div>
                                     <div class="fs-16 fs-xl-20 fs-medium">
-                                        Actively & passively earn presence as a content creator. As our token value grows, your earnings grow.
+                                        <ul>
+                                            <li class="pb-2">Complete Seed Investment</li>
+                                            <li class="pb-2">V.1 XO App Development</li>
+                                            <li class="pb-2">V.1 Creator App Development</li>
+                                            <li class="pb-2">Build Smart Contracts</li>
+                                            <li class="pb-2">Build Exchange Compatibility</li>
+                                            <li class="pb-2">Launch Marketing Campaign</li>
+                                            <li class="pb-2">Token Private Sale</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -428,10 +450,19 @@
                                 <div class="pb-3">
                                     <img src="assets/img/roadmap-flow.svg" alt="" class="w-100">
                                 </div>
-                                <div class="px-4">
-                                    <div class="fs-20 fs-xl-32 ff-syncopate fw-bold mt-2 mb-4 line-yellow">Q4-2022</div>
+                                <div>
+                                    <div class="fs-20 fs-xl-32 ff-syncopate fw-bold mt-2 mb-4 line-yellow">PHASE 4</div>
                                     <div class="fs-16 fs-xl-20 fs-medium">
-                                        Actively & passively earn presence as a content creator. As our token value grows, your earnings grow.
+                                        <ul>
+                                            <li class="pb-2">NFT Genesis Drop 2</li>
+                                            <li class="pb-2">Token Public Sale</li>
+                                            <li class="pb-2">List on Core Exchanges</li>
+                                            <li class="pb-2">Boost Marketing Campaign</li>
+                                            <li class="pb-2">V.1 XO App Public Launch</li>
+                                            <li class="pb-2">V.1 Creator App Launch</li>
+                                            <li class="pb-2">1,000 Creator Milestone</li>
+                                            <li class="pb-2">100,000 User Milestone</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -595,6 +626,13 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="row mb-4 mt-5">
+                            <div class="col-12 text-center pb-5">
+                                <div class="d-inline-block text-white fw-bold ff-syncopate fs-32 fs-xl-48">PARTNER</div>
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="col-12 col-sm-8 col-md-6 col-xl-4 offset-sm-2 offset-md-0 pb-4">
                                 <div class="bg-team">
                                     <img src="assets/img/team/team-1.png" alt="" class="w-100">
