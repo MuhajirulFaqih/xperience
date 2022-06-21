@@ -114,7 +114,7 @@ a, a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: -1;
+    z-index: -2;
 }
 
 .bg-lottie-outer {
@@ -172,7 +172,7 @@ a, a:hover {
     min-height: 100vh;
     background: url('../assets/img/tokenomic-bg.svg');
     background-size: cover;
-    background-position: center;
+    background-position: bottom center;
     padding-top: 5em;
 }
 
@@ -215,7 +215,7 @@ a, a:hover {
     right: 0;
     overflow-y: auto;
     max-height: 100vh;
-    background: #040216;
+    background: #080534;
     transition: all .5s;
     z-index: 11;
     margin-top: -100vh;
@@ -649,7 +649,12 @@ a, a:hover {
     :root {
         font-size: 16px;
     }
-    .nav { 
+    .nav {
+        padding-top: 3em;
+        padding-bottom: 3em;
+        height: 100vh;
+    }
+    /* .nav { 
         position: relative;
         margin-top: 0;
         display: block;
@@ -668,7 +673,7 @@ a, a:hover {
 
     .nav ul li {
         display: inline-block;
-    }
+    } */
 
     .genre-image {
         margin-top: -90px;
@@ -693,7 +698,7 @@ a, a:hover {
         right: 25%;
     }
     #earn {
-        padding-top: 8em;
+        /* padding-top: 8em; */
     }
     .earn-image {
         margin-top: 50px;
@@ -747,7 +752,11 @@ a, a:hover {
         right: -65%;
     }
 
-    #home, #craft, #tokenomics {
+    /* #home, #craft, #tokenomics {
+        background: none;
+    } */
+    
+    #home {
         background: none;
     }
 }
@@ -755,7 +764,7 @@ a, a:hover {
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (min-width: 1200px) {
     #earn {
-        padding-top: 16em;
+        /* padding-top: 16em; */
     }
     .bg-lottie-outer-top .bg-lottie {
         top: auto;

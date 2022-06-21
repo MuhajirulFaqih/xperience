@@ -16,11 +16,11 @@
 </head>
 
 <body>
-    <div data-scroll-container class="position-relative">
+    <div data-scroll-container class="position-relative overflow-hidden">
         <section data-scroll-section>
             <div class="inner">
-                <section id="home" class="pt-4 px-3 pt-xl-5 position-relative overflow-hidden">
-                    <div class="container z-index-2 d-lg-none pt-lg-4">
+                <section id="home" data-scroll data-scroll-id="home" class="pt-4 px-3 pt-xl-5 position-relative overflow-hidden">
+                    <div class="container z-index-2 pt-lg-4">
                         <div class="row text-white d-flex justify-content-center align-items-center">
                             <div class="col-6 col-sm-4">
                                 <a href="" class="fs-30 d-inline-block" data-aos="fade-up">
@@ -29,34 +29,6 @@
                             </div>
                             <div class="col-6 col-sm-8 text-end">
                                 <div class="icon-nav-toggle cursor-pointer" data-aos="fade-up"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nav mt-lg-4">
-                        <div class="w-100" data-aos="fade-up">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12 py-4 px-4 pe-5 text-end d-lg-none">
-                                        <div class="icon-nav-close cursor-pointer"></div>
-                                    </div>
-                                    <div class="col-12 text-center text-lg-start pb-5 pb-lg-0">
-                                        <a href="" class="d-inline-block px-5 px-lg-0 pt-lg-2" data-aos="fade-up">
-                                            <img src="assets/img/logo.png" class="w-100 w-lg-logo">
-                                        </a>
-                                        <ul class="pt-4 pt-lg-0 px-0 menu-lg mb-lg-0" data-aos="fade-up">
-                                            <li class="py-3 py-lg-0 px-lg-3 px-xl-4"><a href="#home" class="d-inline-block fs-16 fw-medium active">HOME</a></li>
-                                            <li class="py-3 py-lg-0 px-lg-3 px-xl-4"><a href="#news" class="d-inline-block fs-16 fw-medium">NEWS</a></li>
-                                            <li class="py-3 py-lg-0 px-lg-3 px-xl-4"><a href="#shop" class="d-inline-block fs-16 fw-medium">SHOP</a></li>
-                                            <li class="py-3 py-lg-0 px-lg-3 px-xl-4"><a href="#claim" class="d-inline-block fs-16 fw-medium">CLAIM</a></li>
-                                            <li class="py-3 py-lg-0 px-lg-3 px-xl-4">
-                                                <a href="https://discord.com/invite/GfbQRpZh" target="_blank" class="d-inline-block px-2"><span class="icon-discord"></span></a>
-                                                <a href="https://www.facebook.com/xperienceyourpotential" target="_blank" class="d-inline-block px-2"><span class="icon-facebook"></span></a>
-                                                <a href="https://www.instagram.com/xonline.io/" target="_blank" class="d-inline-block px-2"><span class="icon-linkedin"></span></a>
-                                                <a href="https://www.linkedin.com/company/xperience-online/about/" target="_blank" class="d-inline-block px-2"><span class="icon-instagram"></span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -192,7 +164,8 @@
                                 <div class="d-inline-block text-white fw-bold ff-syncopate fs-32 fs-xl-48">EARN</div>
                                 <div class="earn-box px-5 mt-4 position-relative" data-scroll data-scroll-id="earn-box">
                                     <div class="earn-box-body">
-                                    <div class="fs-16 fs-xl-20">Earn PRESENCE TOKENS while you watch.</div>
+                                    <div class="fs-16 fs-xl-20">Earn presence for every piece of content you watch and experience on our platform.</div>
+                                    <div class="fs-16 fs-xl-20 mt-3 mt-lg-4">You can rate, comment and create highlights of your favourite content to earn extra presence.</div>
                                     </div>
                                 </div>
                             </div>
@@ -203,7 +176,7 @@
                                 <img src="assets/img/pose-3.png" alt="" class="earn-image mb-sm-5">
                             </div>
                         </div>
-                        <div class="matrix" id="matrix"></div>
+                        <!-- <div class="matrix" id="matrix"></div> -->
                     </div>
                 </section>
             </div>
@@ -297,7 +270,7 @@
             <div class="inner">
                 <section id="x-online" class="px-3 py-5 py-xl-5 position-relative overflow-hidden">
                     <div class="container">
-                        <div class="row">
+                        <div class="row mt-lg-5 pt-lg-5">
                             <div class="col-12 text-center pt-xl-3 pb-xl-5">
                                 <div class="d-inline-block text-white fw-bold ff-syncopate fs-32 fs-xl-48">BECOME A CREATOR</div>
                             </div>
@@ -738,28 +711,60 @@
                 <section id="copy" class="px-3 pt-xl-5 position-relative overflow-hidden">
                     <div class="container py-md-3">
                         <div class="row d-lg-flex align-items-center my-4 my-md-5">
-                            <div class="col-6 col-sm-4 col-lg-2 offset-3 offset-sm-4 offset-lg-0">
-                                <img src="assets/img/logo.png" alt="" class="w-100">
+                            <div class="col-6 col-sm-4 col-lg-1 offset-3 offset-sm-4 offset-lg-0">
+                                <img src="assets/img/logo-footer.png" alt="" class="w-100">
                             </div>
-                            <div class="col-12 col-lg-6 offset-lg-1 text-center mt-4 mt-lg-0">
-                                <a href="#home" class="d-inline-block mx-3 fs-16 fw-bold text-gradient-2">HOME</a>
-                                <a href="#news" class="d-inline-block mx-3 fs-16 opacity-offset-8 text-white">NEWS</a>
-                                <a href="#shop" class="d-inline-block mx-3 fs-16 opacity-offset-8 text-white">SHOP</a>
-                                <a href="#claim" class="d-inline-block mx-3 fs-16 opacity-offset-8 text-white">CLAIM</a>
+                            <div class="col-12 col-lg-7 offset-lg-1 text-center mt-4 mt-lg-0">
+                               <a onclick="goToHome()" href="javascript:void(0);" class="text-white fw-semibold">BACK TO TOP</a>
                             </div>
                             <div class="col-12 col-lg-3 mt-3 mt-lg-0 text-center">
                                 <a href="https://discord.com/invite/GfbQRpZh" target="_blank" class="d-inline-block px-2"><span class="icon-discord"></span></a>
                                 <a href="https://www.facebook.com/xperienceyourpotential" target="_blank" class="d-inline-block px-2"><span class="icon-facebook"></span></a>
                                 <a href="https://www.instagram.com/xonline.io/" target="_blank" class="d-inline-block px-2"><span class="icon-linkedin"></span></a>
                                 <a href="https://www.linkedin.com/company/xperience-online/about/" target="_blank" class="d-inline-block px-2"><span class="icon-instagram"></span></a>
+                                <a href="https://www.web.telegram.org/" target="_blank" class="d-inline-block px-2"><span class="icon-telegram"></span></a>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
         </section>
+        <div class="nav">
+            <div class="w-100" data-aos="fade-up">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 py-4 px-4 pe-5 text-end">
+                            <div class="icon-nav-close cursor-pointer"></div>
+                        </div>
+                        <div class="col-12 text-center text-lg-start pb-5 pb-lg-0">
+                            <!-- <a href="" class="d-inline-block px-5 px-lg-0 pt-lg-2" data-aos="fade-up">
+                                <img src="assets/img/logo.png" class="w-100 w-lg-logo">
+                            </a> -->
+                            <ul class="pt-4 pt-lg-0 px-0 menu-lg mb-lg-0 text-lg-end" data-aos="fade-up">
+                                <li class="py-3 px-lg-3 px-xl-4"><a href="" class="d-inline-block fs-16 fw-bold text-gradient">HOME</a></li>
+                                <li class="py-3 px-lg-3 px-xl-4"><a href="" class="d-inline-block fs-16 opacity-offset-8">WATCH CONTENT</a></li>
+                                <li class="py-3 px-lg-3 px-xl-4"><a href="" class="d-inline-block fs-16 opacity-offset-8">EARN CONTENT</a></li>
+                                <li class="py-3 px-lg-3 px-xl-4"><a href="" class="d-inline-block fs-16 opacity-offset-8">CRAFT NFTS</a></li>
+                                <li class="py-3 px-lg-3 px-xl-4"><a href="" class="d-inline-block fs-16 opacity-offset-8">TOKENOMICS</a></li>
+                                <li class="py-3 px-lg-3 px-xl-4"><a href="" class="d-inline-block fs-16 opacity-offset-8">BECOME A CREATOR</a></li>
+                                <li class="py-3 px-lg-3 px-xl-4"><a href="" class="d-inline-block fs-16 opacity-offset-8">ROADMAP</a></li>
+                                <li class="py-3 px-lg-3 px-xl-4"><a href="" class="d-inline-block fs-16 opacity-offset-8">TEAM</a></li>
+                                <li class="py-3 px-lg-3 px-xl-4"><a href="" class="d-inline-block fs-16 opacity-offset-8">CONTACT</a></li>
+                                <li class="py-3 pt-lg-5 pb-lg-4 px-lg-3 px-xl-4">
+                                    <a href="https://discord.com/invite/GfbQRpZh" target="_blank" class="d-inline-block px-2"><span class="icon-discord"></span></a>
+                                    <a href="https://www.facebook.com/xperienceyourpotential" target="_blank" class="d-inline-block px-2"><span class="icon-facebook"></span></a>
+                                    <a href="https://www.instagram.com/xonline.io/" target="_blank" class="d-inline-block px-2"><span class="icon-linkedin"></span></a>
+                                    <a href="https://www.linkedin.com/company/xperience-online/about/" target="_blank" class="d-inline-block px-2"><span class="icon-instagram"></span></a>
+                                    <a href="https://web.telegram.org/" target="_blank" class="d-inline-block px-2"><span class="icon-telegram"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="bg-lottie-fixed-outer">
-            <div id="genre-background" class="bg-lottie"></div>
+            <!-- <div id="genre-background" class="bg-lottie"></div> -->
         </div>
     </div>
     <script src="js/jquery-3.6.0.min.js?date=12062022"></script>
