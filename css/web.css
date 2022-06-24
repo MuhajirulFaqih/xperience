@@ -154,7 +154,7 @@ a, a:hover {
 #earn {
     z-index: 1;
     min-height: 100vh;
-    background: url('../assets/img/earn-bg.svg');
+    background: url('../assets/img/earn-bg.png');
     background-size: cover;
     background-position: bottom center;
     padding-top: 5em;
@@ -755,10 +755,6 @@ a, a:hover {
     /* #home, #craft, #tokenomics {
         background: none;
     } */
-    
-    #home {
-        background: none;
-    }
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */

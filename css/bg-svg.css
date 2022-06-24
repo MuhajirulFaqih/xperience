@@ -9,11 +9,10 @@
 
 #cloud {
     position: absolute;
-    bottom: -40px;
+    bottom: -50px;
     z-index: 8;
     left: 0;
     width: 100%;
-    display: none;
 }
 
 .bg-lottie-outer, #cloud {
@@ -30,7 +29,7 @@
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (min-width: 768px) {
     #cloud {
-        bottom: -300px;
+        bottom: -200px;
     }
 }
 
@@ -44,14 +43,14 @@
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (min-width: 1200px) {
     #cloud {
-        bottom: -340px;
+        bottom: -230px;
     }
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (min-width: 1400px) {
     #cloud {
-        bottom: -340px;
+        bottom: -250px;
     }
 }
 
