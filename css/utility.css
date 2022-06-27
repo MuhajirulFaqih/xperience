@@ -2,6 +2,9 @@
 .bg-blue-gradient {
     background: linear-gradient(135.84deg, #5E6EFF 0%, #937BFD 100%);
 }
+.bg-blue-gradient-2 {
+    background: linear-gradient(90deg, #3581C4 0%, #8C54A2 87.2%);
+}
 .bg-blue-dark-gradient {
     background: linear-gradient(135.84deg, #5E37FF 0%, #9813FF 100%);
 }
@@ -77,6 +80,9 @@
 .fw-extrabold {
     font-weight: 700;
 }
+.fw-black {
+    font-weight: 800;
+}
 .fs-14 {
     font-size: 14px;
     line-height: 21px;
@@ -87,7 +93,7 @@
 }
 .fs-20 {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 36px;
 }
 .fs-24 {
     font-size: 24px;
@@ -250,7 +256,7 @@
     }
     .fs-sm-20 {
         font-size: 20px;
-        line-height: 30px;
+        line-height: 36px;
     }
     .fs-sm-24 {
         font-size: 24px;
@@ -397,7 +403,7 @@
     }
     .fs-md-20 {
         font-size: 20px;
-        line-height: 30px;
+        line-height: 36px;
     }
     .fs-md-24 {
         font-size: 24px;
@@ -541,7 +547,7 @@
     }
     .fs-lg-20 {
         font-size: 20px;
-        line-height: 30px;
+        line-height: 36px;
     }
     .fs-lg-24 {
         font-size: 24px;
@@ -694,7 +700,7 @@
     }
     .fs-xl-20 {
         font-size: 20px;
-        line-height: 30px;
+        line-height: 36px;
     }
     .fs-xl-24 {
         font-size: 24px;
@@ -844,7 +850,7 @@
     }
     .fs-xxl-20 {
         font-size: 20px;
-        line-height: 30px;
+        line-height: 36px;
     }
     .fs-xxl-24 {
         font-size: 24px;
