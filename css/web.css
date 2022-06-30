@@ -607,11 +607,11 @@ a, a:hover {
     backdrop-filter: blur(24px);
 }
 .coming-soon-button {
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid #FF0000;
-    color: #FF0000;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(4px);
+    /* background: rgba(255, 255, 255, 0.1); */
+    /* border: 2px solid #FF0000; */
+    /* color: #FF0000; */
+    /* box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05); */
+    /* backdrop-filter: blur(4px); */
     position: absolute;
     top: 50%;
     left: 50%;
