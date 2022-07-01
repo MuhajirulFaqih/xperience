@@ -164,8 +164,10 @@ a, a:hover {
     min-height: 100vh;
     background: url('../assets/img/craft-trade-bg.png');
     background-size: cover;
-    background-position: left;
+    background-repeat: no-repeat;
+    background-position: top left;
     padding-top: 3em;
+    position: relative;
 }
 
 #tokenomics {
@@ -663,9 +665,6 @@ a, a:hover {
         width: 40%;
         z-index: 10;
         display: block;
-    }
-    #craft {
-        background-position: center;
     }
     .tokenomics-image {
         margin-top: -200px;
