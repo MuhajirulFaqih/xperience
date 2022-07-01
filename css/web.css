@@ -658,14 +658,6 @@ a, a:hover {
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (min-width: 768px) {
-    .matrix {
-        position: absolute;
-        top: 200px;
-        right: 10%;
-        width: 40%;
-        z-index: 10;
-        display: block;
-    }
     .tokenomics-image {
         margin-top: -200px;
     }
@@ -737,10 +729,6 @@ a, a:hover {
     .earn-image {
         margin-top: 50px;
     }
-    .matrix::after {
-        width: 25%;
-        right: 8%;
-    }
     .genre-box-title, .craft-box-title {
         left: -49px;
     }
@@ -793,6 +781,21 @@ a, a:hover {
     /* #home, #craft, #tokenomics {
         background: none;
     } */
+
+    .matrix {
+        position: absolute;
+        right: 8%;
+        width: 30%;
+        z-index: 10;
+        display: block;
+    }
+
+    .matrix-1 {
+        bottom: 0;
+    }
+    .matrix-2 {
+        top: 0;
+    }
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
@@ -838,6 +841,10 @@ a, a:hover {
         min-height: 596px;
         margin-bottom: 20px;
     }
+    .matrix {
+        width: 434px;
+        right: 10%;
+    }
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
@@ -867,10 +874,6 @@ a, a:hover {
     }
     .genre-box, .earn-box, .craft-box {
         padding-bottom: 100px !important;
-    }
-    .matrix::after {
-        width: 21%;
-        right: 18%;
     }
     #home {
         background-position: bottom center;
