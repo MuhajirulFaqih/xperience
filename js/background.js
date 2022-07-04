@@ -120,6 +120,10 @@ function goToHome() {
     scroll.scrollTo('#home')
 }
 
+function goToLink(target) {
+    scroll.scrollTo(`#${target}`)
+}
+
 // scroll.on('scroll', (args) => {
 //     if(typeof args.currentElements['cloud'] === 'object') {
 //         var progress = args.currentElements['cloud'].progress;
