@@ -16,6 +16,9 @@ html.has-scroll-dragging {
     -ms-user-select: none;
     user-select: none;
 }
+iframe {
+    overflow: hidden;
+}
 
 .has-scroll-smooth body {
     overflow: hidden;
@@ -162,7 +165,8 @@ a, a:hover {
 
 #craft {
     min-height: 100vh;
-    background: url('../assets/img/craft-trade-bg.png');
+    background-image: url('../assets/img/craft-trade-bg.png');
+    background-color: #080534;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
@@ -656,6 +660,15 @@ a, a:hover {
     display: none;
 }
 
+.tube {
+    position: absolute;
+    height: 90vh;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (min-width: 768px) {
     .tokenomics-image {
@@ -843,6 +856,12 @@ a, a:hover {
     }
     .matrix {
         width: 434px;
+    }
+    .tube {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
     }
 }
 
