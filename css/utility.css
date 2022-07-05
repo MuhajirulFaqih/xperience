@@ -132,6 +132,9 @@
 .opacity-offset-8 {
     opacity: 0.8;
 }
+.opacity-offset-5 {
+    opacity: 0.5;
+}
 .rounded-8 {
     border-radius: 8px;
 }
