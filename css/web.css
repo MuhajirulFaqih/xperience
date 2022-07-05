@@ -18,6 +18,8 @@ html.has-scroll-dragging {
 }
 iframe {
     overflow: hidden;
+    user-select: none;
+    pointer-events: none;
 }
 
 .has-scroll-smooth body {
@@ -656,8 +658,16 @@ a, a:hover {
     }
 }
 
-.matrix {
+.matrix, .matrix-animation {
     display: none;
+}
+
+.pose {
+    position: absolute;
+    height: 50vh;
+    top: 35vh;
+    left: 10%;
+    z-index: 1;
 }
 
 .tube {
@@ -854,8 +864,19 @@ a, a:hover {
         min-height: 596px;
         margin-bottom: 20px;
     }
+    .matrix-animation {
+        position: absolute;
+        height: 80%;
+        top: 5%;
+        z-index: 10;
+        display: block;
+        right: 30%;
+    }
     .matrix {
         width: 434px;
+    }
+    .pose {
+        left: 20%;
     }
     .tube {
         position: relative;
@@ -916,6 +937,9 @@ a, a:hover {
 
 /* `xxxl` applies to x-large devices (large desktops, less than 1900px) */
 @media (min-width: 1900px) {
+    .matrix-animation {
+        right: 30%;
+    }
     #earn {
         background-position: center 75%;
     }

@@ -113,7 +113,7 @@ const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
     repeat: true,
-    lerp: 0.2,
+    lerp: 0.5,
 });
 
 function goToHome() {

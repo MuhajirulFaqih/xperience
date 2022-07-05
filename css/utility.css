@@ -622,6 +622,9 @@
     .lh-lg-120percent {
         line-height: 120% !important;
     }
+    .position-lg-relative {
+        position: relative !important;
+    }
     .spacer-lg-96 {
         margin-top: 96px;
     }
