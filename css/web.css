@@ -338,7 +338,7 @@ a, a:hover {
 .genre-box-title {
     background: url('../assets/img/title-bg-genre.png') no-repeat;
     display: inline-block;
-    padding:10px 60px 8px 40px;
+    padding:10px 80px 8px 60px;
     background-size: 100% 100%;
     position: absolute;
     left: -10px;
@@ -866,11 +866,11 @@ a, a:hover {
     }
     .matrix-animation {
         position: absolute;
-        height: 80%;
-        top: 5%;
+        height: 1730px;
+        top: -80px;
         z-index: 10;
         display: block;
-        right: 30%;
+        right: 20%;
     }
     .matrix {
         width: 434px;
@@ -937,9 +937,6 @@ a, a:hover {
 
 /* `xxxl` applies to x-large devices (large desktops, less than 1900px) */
 @media (min-width: 1900px) {
-    .matrix-animation {
-        right: 30%;
-    }
     #earn {
         background-position: center 75%;
     }
