@@ -9,25 +9,24 @@ require 'PHPMailer/src/SMTP.php';
 
 error_reporting(E_ALL);
 
-session_start();
 
-if(isset($_POST['name'])) {
+// if(isset($_POST['name'])) {
     
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+//     $name = $_POST['name'];
+//     $email = $_POST['email'];
+//     $message = $_POST['message'];
 
-    if($name == "" || $email == "" || $message == "") {
-        echo json_encode(["status" => "error", "message" => "Please complete all data!"]);
-    } else {
-        $emailData = [ 'name' => $name, 'email' => $email, 'message' => $message];
-        if(sendEmail($emailData)) {
-            echo json_encode(["status" => "success", "message" => "Your message has been sent"]);
-        } else {
-            echo json_encode(["status" => "error", "message" => "Failed to send email"]);
-        }
-    }
-}
+//     if($name == "" || $email == "" || $message == "") {
+//         echo json_encode(["status" => "error", "message" => "Please complete all data!"]);
+//     } else {
+//         $emailData = [ 'name' => $name, 'email' => $email, 'message' => $message];
+//         if(sendEmail($emailData)) {
+//             echo json_encode(["status" => "success", "message" => "Your message has been sent"]);
+//         } else {
+//             echo json_encode(["status" => "error", "message" => "Failed to send email"]);
+//         }
+//     }
+// }
 
 function sendEmail($emailData) {
     $mail = new PHPMailer;
