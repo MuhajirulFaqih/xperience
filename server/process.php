@@ -9,45 +9,44 @@ require 'PHPMailer/src/SMTP.php';
 
 error_reporting(E_ALL);
 
+session_start();
 
-// if(isset($_POST['name'])) {
+if(isset($_POST['name'])) {
     
-//     $name = $_POST['name'];
-//     $email = $_POST['email'];
-//     $message = $_POST['message'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
-//     if($name == "" || $email == "" || $message == "") {
-//         echo json_encode(["status" => "error", "message" => "Please complete all data!"]);
-//     } else {
-//         $emailData = [ 'name' => $name, 'email' => $email, 'message' => $message];
-//         if(sendEmail($emailData)) {
-//             echo json_encode(["status" => "success", "message" => "Your message has been sent"]);
-//         } else {
-//             echo json_encode(["status" => "error", "message" => "Failed to send email"]);
-//         }
-//     }
-// }
+    if($name == "" || $email == "" || $message == "") {
+        header("location: ../index.html");
+    } else {
+        $emailData = [ 'name' => $name, 'email' => $email, 'message' => $message];
+        if(sendEmail($emailData)) {
+            header("location: ../index.html");
+        } else {
+            header("location: ../index.html");
+        }
+    }
+}
 
 function sendEmail($emailData) {
     $mail = new PHPMailer;
     $mail->isSMTP();
-    $mail->Host = 'xonline.io';
-    $mail->Port = 465;
+    $mail->Host = 'smtp.gmail.com';
+    $mail->Port = 587;
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = 'tls';
-    $mail->Username = 'contact@xonline.io';
-    $mail->Password = 'plainthing123';
+    $mail->Username = 'smtpxonline@gmail.com';
+    $mail->Password = 'yohrqopkctxhuuet';
     $mail->setFrom($emailData['email'], $emailData['name']);
-    $mail->addAddress('contact@xonline.io', 'X-Online');
-    if ($mail->addReplyTo($emailData['email'], $emailData['name'])) {
-        $mail->Subject = 'Email From Website X-Online';
-        $mail->isHTML(true);
-        $mail->msgHTML(get_include_contents('to.php', $emailData));
-        if (!$mail->send()) {
-            echo $mail->ErrorInfo;
-        } else {
-            return true;
-        }
+    $mail->addAddress('contact@xonline.io', 'Xonline');
+    $mail->Subject = 'Email From ' . $emailData['name'];
+    $mail->isHTML(true);
+    $mail->msgHTML(get_include_contents('to.php', $emailData));
+    if (!$mail->send()) {
+        return false;
+    } else {
+        return true;
     }
 }
 
