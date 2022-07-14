@@ -36,10 +36,10 @@ function sendEmail($emailData) {
     $mail->Port = 587;
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = 'tls';
-    $mail->Username = 'smtpxonline@gmail.com';
-    $mail->Password = 'yohrqopkctxhuuet';
+    $mail->Username = 'smtpxonlineio@gmail.com';
+    $mail->Password = 'qhdvpnjzyrlacmfr';
     $mail->setFrom($emailData['email'], $emailData['name']);
-    $mail->addAddress('contact@xonline.io', 'Xonline');
+    $mail->addAddress('contact@xonline.io', 'X-Online');
     $mail->Subject = 'Email From ' . $emailData['name'];
     $mail->isHTML(true);
     $mail->msgHTML(get_include_contents('to.php', $emailData));
