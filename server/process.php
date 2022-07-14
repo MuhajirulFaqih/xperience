@@ -44,7 +44,7 @@ function sendEmail($emailData) {
     $mail->isHTML(true);
     $mail->msgHTML(get_include_contents('to.php', $emailData));
     if (!$mail->send()) {
-        return false;
+        echo $mail->ErrorInfo;
     } else {
         return true;
     }
