@@ -24,7 +24,7 @@ if(isset($_POST['name'])) {
         if(sendEmail($emailData)) {
             header("location: ../index.html");
         } else {
-            header("location: ../index.html");
+            echo "Email failed to send";
         }
     }
 }
