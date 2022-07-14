@@ -24,7 +24,7 @@ if(isset($_POST['name'])) {
         if(sendEmail($emailData)) {
             header("location: ../index.html");
         } else {
-            echo "Email failed to send";
+            header("location: ../index.html");
         }
     }
 }
@@ -44,7 +44,7 @@ function sendEmail($emailData) {
     $mail->isHTML(true);
     $mail->msgHTML(get_include_contents('to.php', $emailData));
     if (!$mail->send()) {
-        echo $mail->ErrorInfo;
+        return false;
     } else {
         return true;
     }
