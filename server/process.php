@@ -39,7 +39,7 @@ function sendEmail($emailData) {
     $mail->Username = 'smtpxonlineio@gmail.com';
     $mail->Password = 'qhdvpnjzyrlacmfr';
     $mail->setFrom($emailData['email'], $emailData['name']);
-    $mail->addAddress('enquiries@gmail.com', 'X-Online');
+    $mail->addAddress('faqih23ahmad@gmail.com', 'X-Online');
     $mail->Subject = 'Email From ' . $emailData['name'];
     $mail->isHTML(true);
     $mail->msgHTML(get_include_contents('to.php', $emailData));
